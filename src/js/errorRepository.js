@@ -1,18 +1,15 @@
 export default class ErrorRepository {
-    constructor() {
-        this.repozitory = new Map([
-            [1, "ошибка первая"],
-            [2, "ошибка вторая"],
-            [3, "ошибка третья"]
-        ]);
+  constructor() {
+    this.repozitory = new Map([
+      [1, 'ошибка первая'],
+      [2, 'ошибка вторая'],
+      [3, 'ошибка третья'],
+    ]);
+  }
 
-    }
-
-    translate(code) {
-        if (this.repozitory.has(code)) {
-            return this.repozitory.get(code);
-        } else return 'Unknown error';
-
-    }
-
+  translate(code) {
+    if (this.repozitory.has(code)) {
+      return this.repozitory.get(code);
+    } return 'Unknown error';
+  }
 }
